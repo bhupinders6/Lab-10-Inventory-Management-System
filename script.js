@@ -48,4 +48,9 @@ class Store {
     constructor() {
         this.inventory = []; 
     } 
+        //to add new product into the inventory array
+    addProduct(product) {
+        this.inventory.push(product)
+    };
+    
 }
