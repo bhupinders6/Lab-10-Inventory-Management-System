@@ -12,13 +12,15 @@ class Product {
     toString() {
         return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
-    
-    "Part 3 will go here"
+
+    //Part 3 will go here.
 
     static applyDiscount(products, discount) {
+        //looping thru every product in the array and for each one we reduce the price by the discounted %
         products.forEach(product => {
-            product.price = product.price - (product.price * discount);
-        });
+            //for example, if the discount is 0.15 it means 15 %
+            product.price = product.price - (product.price * discount); //here, we take 15 percent of the price and then subtract it from the original price.
+        }); 
     }
     
 }
