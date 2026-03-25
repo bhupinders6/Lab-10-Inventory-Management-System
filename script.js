@@ -28,3 +28,6 @@ class PerishableProduct extends Product {
 const milk = new PerishableProduct("Milk", 1.50, 10, "2026-04-31");
 const yogurt = new PerishableProduct("Yogurt", 3.00, 15, "2026-05-31");
 
+
+console.log(milk.toString());
+console.log(yogurt.toString());
