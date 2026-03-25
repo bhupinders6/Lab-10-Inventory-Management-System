@@ -42,3 +42,10 @@ const yogurt = new PerishableProduct("Yogurt", 3.00, 15, "2026-05-31");
 
 console.log(milk.toString());
 console.log(yogurt.toString());
+
+//part 4, store class to manage all the productgs
+class Store { 
+    constructor() {
+        this.inventory = []; 
+    } 
+}
