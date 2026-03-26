@@ -56,7 +56,7 @@ class Store {
     getInventoryValue() {
         let total=0;
         this.inventory.forEach(product => {
-            total+ = product.getTotalValue();
+            total += product.getTotalValue();
         });
         return total;
     }
@@ -71,3 +71,7 @@ class Store {
         return null;
     }
 }
+    const store= new Store();
+    const product1 = new Product("Apple", 2.99,60);
+    const product2 = new Product("Cold Drink", 3.99, 40);
+    const product3 = new Product("Shampoo", 12.99, 25);
