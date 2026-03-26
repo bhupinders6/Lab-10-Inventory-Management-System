@@ -87,4 +87,7 @@ class Store {
     store.addProduct(product4);
     store.addProduct(product5);
 
+    //to check total value before discount
+    console.log("Before Discount: $" + store.getInventoryValue().toFixed(2));
+
     
