@@ -90,4 +90,10 @@ class Store {
     //to check total value before discount
     console.log("Before Discount: $" + store.getInventoryValue().toFixed(2));
 
+    //applying 15percent discount
+    Product.applyDiscount(store.inventory, 0.15);
+
+    //to check total value after applying 15 percent discount
+    console.log("After Discount: $" + store.getInventoryValue().toFixed(2));
     
+
