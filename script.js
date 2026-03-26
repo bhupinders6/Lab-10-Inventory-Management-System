@@ -75,3 +75,9 @@ class Store {
     const product1 = new Product("Apple", 2.99,60);
     const product2 = new Product("Cold Drink", 3.99, 40);
     const product3 = new Product("Shampoo", 12.99, 25);
+    //now adding perishable products
+
+    const product4 = new PerishableProduct("Milk", 1.50, 10, "2026-04-31");
+    const product5 = new PerishableProduct("Yogurt", 3.00, 15, "2026-05-31");
+
+    
