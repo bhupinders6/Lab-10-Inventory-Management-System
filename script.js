@@ -95,5 +95,13 @@ class Store {
 
     //to check total value after applying 15 percent discount
     console.log("After Discount: $" + store.getInventoryValue().toFixed(2));
+
+    //To find and print the details of a specific product by its name
+    const found = store.findProductByName("Milk");
+    if (found) {
+        console.log(found.toString());
+    } else {
+        console.log("Product not found");
+    }
     
 
