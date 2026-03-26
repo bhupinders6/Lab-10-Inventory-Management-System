@@ -80,4 +80,11 @@ class Store {
     const product4 = new PerishableProduct("Milk", 1.50, 10, "2026-04-31");
     const product5 = new PerishableProduct("Yogurt", 3.00, 15, "2026-05-31");
 
+    //now storing all products to the store
+    store.addProduct(product1);
+    store.addProduct(product2);
+    store.addProduct(product3);
+    store.addProduct(product4);
+    store.addProduct(product5);
+
     
