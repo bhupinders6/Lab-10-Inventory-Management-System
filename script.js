@@ -60,4 +60,14 @@ class Store {
         });
         return total;
     }
+    //to search thru the inventory by product name, if nothing comes up , it will shows null
+    findProductByName(name) {
+        for (let product of this.inventory) {
+            if (product.name == name) {
+                return product;
+            }
+        }
+        //if didn't find anything so will display null
+        return null;
+    }
 }
