@@ -51,6 +51,13 @@ class Store {
         //to add new product into the inventory array
     addProduct(product) {
         this.inventory.push(product)
-    };
-    
+    }
+    //to make it loop thru all products and add up their total value we will insert following
+    getInventoryValue() {
+        let total=0;
+        this.inventory.forEach(product => {
+            total+ = product.getTotalValue();
+        });
+        return total;
+    }
 }
